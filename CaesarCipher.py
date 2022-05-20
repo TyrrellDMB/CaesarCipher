@@ -33,6 +33,5 @@ def decrypt(encrypted_text, s):
 plain_text = input("Input the phrase you would like encrypted: ")
 s = int(input("Enter shift: "))
 encrypt_text = encrypt(plain_text, s)
-
 print("Encrypted text: {}\n".format(encrypt_text))
 print("Decrypted text: {}\n".format(decrypt(encrypt_text, s)))
