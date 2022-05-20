@@ -26,18 +26,13 @@ def decrypt(encrypted_text, s):
         else: 
             decrypted_text = decrypted_text + chr(
                 (ord(encrypt_text[i]) - s - 97) % 26 + 97
-                )
+            )
     return decrypted_text
 
+
 plain_text = input("Input the phrase you would like encrypted: ")
-s = int (input("Enter shift: "))
 s = int(input("Enter shift: "))
 encrypt_text = encrypt(plain_text, s)
 
 print("Encrypted text: {}".format(encrypt_text))
 print("Decrypted text: {}".format(decrypt(encrypt_text, s)))
-
-# \No newline at end of file
-print("Decrypted text: {}".format(decrypt(encrypt_text, s)))
-
-
