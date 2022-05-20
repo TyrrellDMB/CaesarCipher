@@ -35,4 +35,4 @@ s = int(input("Enter shift: "))
 encrypt_text = encrypt(plain_text, s)
 
 print("Encrypted text: {}\n".format(encrypt_text))
-print("Decrypted text: {}".format(decrypt(encrypt_text, s)))
+print("Decrypted text: {}\n".format(decrypt(encrypt_text, s)))
