@@ -23,7 +23,7 @@ def decrypt(encrypted_text, s):
             decrypted_text = decrypted_text + chr(
                 (ord(encrypt_text[i]) - s - 65) % 26 + 65
             )
-        else: 
+        else:
             decrypted_text = decrypted_text + chr(
                 (ord(encrypt_text[i]) - s - 97) % 26 + 97
             )
@@ -34,5 +34,5 @@ plain_text = input("Input the phrase you would like encrypted: ")
 s = int(input("Enter shift: "))
 encrypt_text = encrypt(plain_text, s)
 
-print("Encrypted text: {}".format(encrypt_text))
+print("Encrypted text: {}\n".format(encrypt_text))
 print("Decrypted text: {}".format(decrypt(encrypt_text, s)))
